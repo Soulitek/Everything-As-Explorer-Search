@@ -12,11 +12,9 @@ Instead of right-clicking in Save dialogs and selecting "Jump to Folder..." from
 
 ## 🎬 Demo Video
 
-See the script in action! Watch the demonstration video:
+See the script in action!
 
-[![Demo Video](Recording%20(1).mp4)](Recording%20(1).mp4)
-
-Or download and view: [Recording (1).mp4](Recording%20(1).mp4)
+![Demo Video](video.gif)
 
 ## 📋 Requirements
 
