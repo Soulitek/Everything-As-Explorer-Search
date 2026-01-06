@@ -24,15 +24,40 @@ Instead of right-clicking in Save dialogs and selecting "Jump to Folder..." from
 3. Test JumpToFolder manually (right-click in Save dialog → "Jump to Folder...") to ensure it's configured correctly
 
 ### Step 2: Configure the Script
-1. Open the `.ahk` script file in a text editor (Notepad, VS Code, etc.)
-2. Find line 28 that says:
-   ```
-   JumpToFolderCmd := '"C:\Program Files\JumpToFolder\JumpToFolder.exe" -jump'
-   ```
-3. **Change the path** to where YOUR JumpToFolder.exe is located. For example:
-   ```
-   JumpToFolderCmd := '"C:\Program Files\JumpToFolder\JumpToFolder.exe" -jump'
-   ```
+
+**First, find where JumpToFolder.exe is located on your computer:**
+- If you installed JumpToFolder, check where you saved it (common locations: `C:\Program Files\JumpToFolder\` or `C:\Tools\JumpToFolder\`)
+- If you're not sure, search for `JumpToFolder.exe` in Windows File Explorer
+- Right-click the file → **Properties** → copy the full path from "Location"
+
+**Now update the script:**
+1. Open `JumpToFolderTrigger.ahk` in any text editor (Notepad, VS Code, etc.)
+2. Look for the line that starts with `JumpToFolderCmd :=` (around line 37, under the "CONFIGURATION" section)
+3. Replace the path inside the quotes with **your** JumpToFolder.exe location
+
+**Example - Before (default):**
+```autohotkey
+JumpToFolderCmd := '"C:\Program Files\JumpToFolder\JumpToFolder.exe" -jump'
+```
+
+**Example - After (your path):**
+```autohotkey
+; If JumpToFolder is in C:\Tools\JumpToFolder\
+JumpToFolderCmd := '"C:\Tools\JumpToFolder\JumpToFolder.exe" -jump'
+
+; Or if it's in D:\Apps\JumpToFolder\
+JumpToFolderCmd := '"D:\Apps\JumpToFolder\JumpToFolder.exe" -jump'
+
+; Or if it's in your user folder
+JumpToFolderCmd := '"C:\Users\YourName\Desktop\JumpToFolder\JumpToFolder.exe" -jump'
+```
+
+**Important:** 
+- Keep the quotes around the path
+- Keep the ` -jump` at the end
+- Make sure the path uses backslashes (`\`) not forward slashes (`/`)
+- The path must point to the actual `.exe` file, not just the folder
+
 4. Save the file
 
 ### Step 3: Run the Script
