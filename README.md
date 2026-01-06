@@ -10,6 +10,14 @@ Instead of right-clicking in Save dialogs and selecting "Jump to Folder..." from
 - **Click** on the navigation toolbar
 - **Click** on the search box
 
+## 🎬 Demo Video
+
+See the script in action! Watch the demonstration video:
+
+[![Demo Video](Recording%20(1).mp4)](Recording%20(1).mp4)
+
+Or download and view: [Recording (1).mp4](Recording%20(1).mp4)
+
 ## 📋 Requirements
 
 1. **Windows** (7, 8, 10, or 11)
