@@ -34,7 +34,7 @@
 ;   "C:\Tools\JumpToFolder\JumpToFolder.exe" -jump
 ;   "D:\Apps\JumpToFolder\JumpToFolder.exe" -jump
 
-JumpToFolderCmd := '"C:\Users\Eitan\Desktop\New folder (2)\JumpToFolder.exe" -jump'
+JumpToFolderCmd := '"C:\Program Files\JumpToFolder\JumpToFolder.exe" -jump'
 
 ; Alternative: If you created a .lnk shortcut, you can use that instead:
 ; JumpToFolderCmd := '"C:\Path\To\Your\JumpToFolder.lnk"'

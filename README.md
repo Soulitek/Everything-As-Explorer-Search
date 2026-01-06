@@ -27,7 +27,7 @@ Instead of right-clicking in Save dialogs and selecting "Jump to Folder..." from
 1. Open the `.ahk` script file in a text editor (Notepad, VS Code, etc.)
 2. Find line 28 that says:
    ```
-   JumpToFolderCmd := '"C:\Users\Eitan\Desktop\New folder (2)\JumpToFolder.exe" -jump'
+   JumpToFolderCmd := '"C:\Program Files\JumpToFolder\JumpToFolder.exe" -jump'
    ```
 3. **Change the path** to where YOUR JumpToFolder.exe is located. For example:
    ```
