@@ -20,13 +20,31 @@ See the script in action!
 
 1. **Windows** (7, 8, 10, or 11)
 2. **AutoHotkey v2.0+** - [Download here](https://www.autohotkey.com/v2/)
-3. **JumpToFolder** - [Download here](https://www.voidtools.com/forum/viewtopic.php?t=2982)
+3. **JumpToFolder** - [Download here](https://www.voidtools.com/forum/viewtopic.php?t=11194)
 
 ## 🚀 Installation
 
+### Quick install (recommended)
+
+**Prerequisites:** Install [AutoHotkey v2](https://www.autohotkey.com/v2/) and [JumpToFolder](https://www.voidtools.com/forum/viewtopic.php?t=11194) first.
+
+From this folder in PowerShell, run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File Install.ps1
+```
+
+The script will find JumpToFolder.exe (or prompt you for the path), configure the trigger script, and optionally add it to Windows Startup. Then double-click `JumpToFolderTrigger.ahk` to run.
+
+**Prefer manual setup?** See Step 2 below.
+
+---
+
+### Manual installation
+
 ### Step 1: Install Prerequisites
 1. Download and install **AutoHotkey v2** from https://www.autohotkey.com/v2/
-2. Download and set up **JumpToFolder** from https://www.voidtools.com/forum/viewtopic.php?t=2982
+2. Download and set up **JumpToFolder** from https://www.voidtools.com/forum/viewtopic.php?t=11194
 3. Test JumpToFolder manually (right-click in Save dialog → "Jump to Folder...") to ensure it's configured correctly
 
 ### Step 2: Configure the Script
