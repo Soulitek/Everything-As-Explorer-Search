@@ -54,10 +54,9 @@ RButton:: {
     ; Get the control under the mouse cursor
     MouseGetPos ,, &winID, &controlClass
     
-    ; Check if clicked on navigation box, toolbar, or search box
-    if (controlClass = "Edit2" or 
-        controlClass = "ToolbarWindow324" or 
-        controlClass = "Edit1" or
+    ; Check if clicked on navigation box or toolbar (NOT Edit1 = file name field)
+    if (controlClass = "Edit2" or
+        controlClass = "ToolbarWindow324" or
         controlClass = "DirectUIHWND3") {
         ; Small delay to let the click register
         Sleep 50
